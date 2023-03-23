@@ -32,9 +32,10 @@ const App: Component = () => {
     <div class='flex flex-col bg-slate-800 overflow-y-scroll h-screen'>
       <TopBar />
       <div id="home" class='min-h-full p-16 relative flex items-center justify-center'>
-        <div>
-          <span>Hi there</span>
-          <span>I'm Mohan</span>
+        <div class='flex flex-col'>
+          <span class='text-slate-400'>Hi, I'm</span>
+          <span class='text-5xl text-white'>Mohanavel</span>
+          <span class='text-lg text-slate-400'>I code web stuffs!</span>
         </div>
       </div>
       <div id="projects" class='min-h-full p-16 relative flex flex-col items-center justify-center'>
