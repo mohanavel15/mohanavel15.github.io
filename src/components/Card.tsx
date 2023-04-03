@@ -1,31 +1,41 @@
-import { For } from "solid-js"
+import { createVisibilityObserver } from "@solid-primitives/intersection-observer";
+import { createSignal, For } from "solid-js"
 
 export type CardProps = {
-    name: string,
-    type: string,
-    imgsrc: string,
-    tags: string[],
-    github: string,
-    demo?: string,
+	name: string,
+	type: string,
+	imgsrc: string,
+	tags: string[],
+	github: string,
+	demo?: string,
+	reverse: boolean,
 }
 
 export default function Card(props: CardProps) {
-    console.log(props.demo)
-    return (
-        <div class="relative flex flex-col p-4 w-96 h-auto rounded bg-slate-900 shadow-black shadow-xl">
-            <span class="text-white font-bold">{props.type}</span>
-            <img class="my-2" src={props.imgsrc} />
-            <span class="text-white font-medium">{props.name}</span>
-            <div class="flex w-full items-center justify-evenly my-2">
-                {props.demo && <button onClick={() => window.open(props.demo)} class="bg-indigo-800 text-slate-300 h-10 w-16 rounded-lg font-medium shadow-md shadow-black hover:shadow-none hover:bg-indigo-900">Demo</button>}
-                <button onClick={() => window.open(props.github)} class="bg-indigo-800 text-slate-300 h-10 w-16 rounded-lg font-medium shadow-md shadow-black hover:shadow-none hover:bg-indigo-900">Github</button>
-            </div>
-            <div class="w-full h-12 flex items-center">
-                <For each={props.tags}>{(tag) =>
-                    <span class="py-0.5 px-1.5 text-slate-400 font-medium h-8 flex items-center justify-center bg-slate-800 rounded-md mx-1">{tag}</span>
-                }
-                </For>
-            </div>
-        </div>
-    )
+	const visibilityObserver = createVisibilityObserver();
+	const [card, setCard] = createSignal<HTMLDivElement>();
+	const isVisible = visibilityObserver(card);
+
+	return (
+		<div class={`${isVisible() && "slide-in-left"} relative flex w-1/2 flex-row p-4 h-40 rounded border-2 border-black shadow-black shadow-md`} ref={setCard}>
+			<div class="w-1/2 relative">
+				<div class="h-3/4 w-full relative flex flex-col">
+					<span class="font-medium">{props.name}</span>
+					<div class="absolute bottom-0">
+						<button onClick={() => window.open(props.github)} class="border-2 border-black rounded px-1 mr-1 shadow-md shadow-black hover:shadow-none">GitHub</button>
+						{props.demo && <button onClick={() => window.open(props.demo)} class="border-2 border-black rounded px-1 mr-1 shadow-md shadow-black hover:shadow-none">Demo</button>}
+					</div>
+				</div>
+				<div class="h-1/4 w-full flex items-center absolute bottom-0">
+					<For each={props.tags}>{(tag) =>
+						<span class="mr-2">#{tag}</span>
+					}
+					</For>
+				</div>
+			</div>
+			<div class="w-1/2 relative">
+				<img class="absolute h-full right-0" src={props.imgsrc} />
+			</div>
+		</div>
+	)
 }
