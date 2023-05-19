@@ -8,24 +8,31 @@ const App: Component = () => {
 		{
 			name: "Chatapp",
 			type: "Full-Stack",
-			imgsrc: "https://cdn.discordapp.com/attachments/539343946418225152/1086652382173204561/image.png",
+			imgsrc: "/assets/chatapp.png",
 			github: "https://github.com/mohanavel15/Chatapp",
-			tags: ["Go", "React", "MongoDB", "TailwindCSS"]
+			tags: ["Go", "Gorilla Web Toolkit", "React JS", "Typescript", "MongoDB"]
 		},
 		{
 			name: "Meet",
 			type: "Full-Stack",
-			imgsrc: "https://cdn.discordapp.com/attachments/539343946418225152/1087971760269439057/home.png",
+			imgsrc: "/assets/meet.png",
 			github: "https://github.com/mohanavel15/Meet",
-			tags: ["GoFiber", "SolidJS", "TailwindCSS"]
+			tags: ["WebRTC", "Go", "Go Fiber", "Solid JS", "Typescript", "TailwindCSS", "GitHub Oauth"]
 		},
 		{
 			name: "Discord UI Clone",
 			type: "Frontend",
-			imgsrc: "https://media.discordapp.net/attachments/539343946418225152/1087972043833753700/Group.png?width=1316&height=616",
+			imgsrc: "/assets/discord_ui_clone.png",
 			github: "https://github.com/mohanavel15/discord-ui-clone",
 			demo: "https://mohanavel15.github.io/discord-ui-clone/#/channels/@me",
-			tags: ["React", "TailwindCSS"]
+			tags: ["React JS", "Tailwind CSS"]
+		},
+		{
+			name: "SocialMedia",
+			type: "Full-Stack",
+			imgsrc: "",
+			github: "https://github.com/mohanavel15/SocialMedia",
+			tags: ["Go", "Go Fiber", "Solid JS", "Tailwind CSS"],
 		}
 	]
 
@@ -44,11 +51,11 @@ const App: Component = () => {
 				</div>
 				{!isVisible() && <span onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })} class='absolute text-6xl bottom-4 animate-bounce hover:cursor-pointer'>&#8595;</span>}
 			</div>
-			<div ref={setPage2} id="projects" class='min-h-full p-16 relative flex flex-col items-center justify-center'>
+			<div ref={setPage2} id="projects" class='min-h-full relative flex flex-col items-center justify-center'>
 				<span class='text-4xl my-12'>Projects</span>
-				<div class='flex flex-col w-full h-full justify-evenly items-center'>
+				<div class='h-full w-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center'>
 					<For each={projects}>
-						{(project, index) => <Card {...project} reverse={index() % 2 === 0} />}
+						{(project) => <Card {...project} />}
 					</For>
 				</div>
 			</div>
