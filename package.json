@@ -20,7 +20,6 @@
     "vite-plugin-solid": "^2.6.1"
   },
   "dependencies": {
-    "@solid-primitives/intersection-observer": "^2.0.9",
     "solid-js": "^1.6.15"
   }
 }

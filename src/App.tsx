@@ -1,12 +1,11 @@
-import { Component, createSignal, For } from 'solid-js';
+import { Component, For } from 'solid-js';
 import Card from './components/Card';
 import TopBar from './components/TopBar';
-import { createVisibilityObserver } from "@solid-primitives/intersection-observer";
 
 const App: Component = () => {
 	const projects = [
 		{
-			name: "Chatapp",
+			name: "Chat App",
 			type: "Full-Stack",
 			imgsrc: "/assets/chatapp.png",
 			github: "https://github.com/mohanavel15/Chatapp",
@@ -28,37 +27,33 @@ const App: Component = () => {
 			tags: ["React JS", "Tailwind CSS"]
 		},
 		{
-			name: "SocialMedia",
+			name: "Social Media",
 			type: "Full-Stack",
-			imgsrc: "",
+			imgsrc: "/assets/socialmedia.png",
 			github: "https://github.com/mohanavel15/SocialMedia",
 			tags: ["Go", "Go Fiber", "Solid JS", "Tailwind CSS"],
 		}
-	]
-
-	const visibilityObserver = createVisibilityObserver({ threshold: 0.2 });
-	const [page2, setPage2] = createSignal<HTMLDivElement>();
-	const isVisible = visibilityObserver(page2);
+	];
 
 	return (
-		<div class='flex flex-col text-black bg-white overflow-y-scroll h-screen'>
+		<div class='flex flex-col text-black bg-white overflow-y-scroll h-full'>
 			<TopBar />
-			<div id="home" class='min-h-full p-16 relative flex items-center justify-center'>
-				<div class='flex flex-col'>
+			<div class='h-96 relative flex items-center justify-center'>
+				<div class='flex flex-col p-4 w-full md:w-3/4 lg:w-2/4 xl:w-1/3'>
 					<span>Hi👋, I'm</span>
 					<span class='text-5xl'>Mohanavel</span>
-					<span class='text-lg'>I enjoy coding web stuffs!</span>
+					<span class='text-lg'>Highly motivated and dedicated Full-Stack Developer with a passion for building innovative web applications. Committed to delivering high-quality code and continuously improving skills to drive impactful results.</span>
 				</div>
-				{!isVisible() && <span onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })} class='absolute text-6xl bottom-4 animate-bounce hover:cursor-pointer'>&#8595;</span>}
 			</div>
-			<div ref={setPage2} id="projects" class='min-h-full relative flex flex-col items-center justify-center'>
+			<div class='relative flex flex-col items-center justify-center'>
 				<span class='text-4xl my-12'>Projects</span>
-				<div class='h-full w-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center'>
+				<div class='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center'>
 					<For each={projects}>
 						{(project) => <Card {...project} />}
 					</For>
 				</div>
 			</div>
+			<div class='w-full h-16'></div>
 		</div>
 	);
 };
