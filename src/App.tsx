@@ -36,16 +36,18 @@ const App: Component = () => {
 	];
 
 	return (
-		<div class='flex flex-col text-black bg-white overflow-y-scroll h-full'>
+		<div class='flex flex-col text-white overflow-y-scroll h-full'>
 			<TopBar />
-			<div class='h-96 relative flex items-center justify-center'>
+			<img src='/assets/split.svg' class='w-full' />
+			<div class='h-96 relative flex items-center justify-center bg-[#001220]'>
 				<div class='flex flex-col p-4 w-full md:w-3/4 lg:w-2/4 xl:w-1/3'>
 					<span>Hi👋, I'm</span>
 					<span class='text-5xl'>Mohanavel</span>
 					<span class='text-lg'>Highly motivated and dedicated Full-Stack Developer with a passion for building innovative web applications. Committed to delivering high-quality code and continuously improving skills to drive impactful results.</span>
 				</div>
 			</div>
-			<div class='relative flex flex-col items-center justify-center'>
+			<img src='/assets/split2.svg' class='w-full min-w-full' />
+			<div class='relative flex flex-col items-center justify-center bg-[#C62368]'>
 				<span class='text-4xl my-12'>Projects</span>
 				<div class='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center'>
 					<For each={projects}>
@@ -53,7 +55,7 @@ const App: Component = () => {
 					</For>
 				</div>
 			</div>
-			<div class='w-full h-16'></div>
+			<div class='w-full h-16 bg-[#C62368]'></div>
 		</div>
 	);
 };

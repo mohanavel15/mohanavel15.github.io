@@ -11,7 +11,7 @@ export type CardProps = {
 
 export default function Card(props: CardProps) {
 	return (
-		<div class="relative p-4 h-96 w-80 border-2 flex flex-col gap-2 border-black shadow-black shadow-md">
+		<div class="relative p-4 h-96 w-80 rounded-lg flex flex-col gap-2 text-black bg-amber-500">
 			<span class="font-semibold">{props.type}</span>
 			<img class="w-full" src={props.imgsrc} />
 			<span class="font-medium">{props.name}</span>
@@ -21,7 +21,7 @@ export default function Card(props: CardProps) {
 			</div>
 			<div class="relative w-full flex flex-wrap gap-2 items-center">
 				<For each={props.tags}>{(tag) =>
-					<span class="h-min bg-zinc-200 px-2 rounded">#{tag}</span>
+					<span class="h-min px-2 rounded">#{tag}</span>
 				}
 				</For>
 			</div>
