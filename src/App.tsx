@@ -66,7 +66,7 @@ const App: Component = () => {
 				</div>
 			</div>
 			<img src='/assets/split3.svg' class='w-full' />
-			<div class='relative flex flex-col items-center justify-center bg-[#0066FF] text-black'>
+			<div class='relative flex flex-col items-center justify-center bg-[#0066FF]'>
 				<span class='text-4xl my-12'>Projects</span>
 				<div class='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center'>
 					<For each={projects}>
