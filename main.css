@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --light-gray: #252525;
+    --dark-gray: #1E1E1E;
+    --yellow: #FFBE00;
+    --orange: #FF6400;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-gray);
+}
+
+.main-container {
+    height: 100%;
+    width: 620px;
+    background-color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gradient-bar {
+    height: 5px;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, var(--orange) 0%, var(--yellow) 50%, var(--orange) 100%); 
+}
+
+.title-greet {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--yellow) 0%, var(--orange) 50%, var(--yellow) 100%);
+    background-clip: text;
+    color: transparent; 
+}
+
+.nav,
+.nav div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.nav button:hover {
+    cursor: not-allowed;
+}
+
+body p {
+    font-size: larger;
+    width: 85%;
+}
+
+
+@media (max-width: 620px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+.warning-tape {
+    width: 250%;
+    height: 100px;
+    position: absolute;
+    transform: translate(-25%, -75%) rotate(25deg);
+    background: repeating-linear-gradient(
+      -45deg,
+      #ffcc00 0,
+      #ffcc00 30px,
+      #000 30px,
+      #000 60px
+    );
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.warning-tape2 {
+    width: 250%;
+    height: 100px;
+    position: absolute;
+    transform: translate(25%, 75%) rotate(-20deg);
+    background: repeating-linear-gradient(
+      -45deg,
+      #ffcc00 0,
+      #ffcc00 30px,
+      #000 30px,
+      #000 60px
+    );
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.warning-tape span,
+.warning-tape2 span {
+    color: #000;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: #ffcc00;
+}
+
