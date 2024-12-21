@@ -130,5 +130,6 @@ body {
     font-size: xx-large;
     font-weight: bold;
     background-color: #ffcc00;
+    white-space: nowrap;
 }
 
