@@ -13,20 +13,22 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: var(--light-gray);
+    overflow-y: scroll;
 }
 
 .main-container {
-    height: 100%;
+    min-height: 100%;
     width: 620px;
     background-color: var(--dark-gray);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .gradient-bar {
@@ -84,52 +86,42 @@ body p {
     }
 }
 
-body {
-    overflow: hidden;
+/*
+-----------------
+    Projects
+-----------------
+*/
+.projects-grid {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 240px);
+    gap: 24px;
+    padding-top: 2rem;
 }
-
-.warning-tape {
-    width: 250%;
-    height: 100px;
-    position: absolute;
-    transform: translate(-25%, -75%) rotate(25deg);
-    background: repeating-linear-gradient(
-      -45deg,
-      #ffcc00 0,
-      #ffcc00 30px,
-      #000 30px,
-      #000 60px
-    );
-    color: white;
+.project-container {
+    width: 240px;
     display: flex;
-    align-items: center;
-    justify-content: end;
+    flex-direction: column;
+    padding: 0.5rem;
+    transition: transform .2s;
+    gap: 12px;
 }
 
-.warning-tape2 {
-    width: 250%;
-    height: 100px;
-    position: absolute;
-    transform: translate(25%, 75%) rotate(-20deg);
-    background: repeating-linear-gradient(
-      -45deg,
-      #ffcc00 0,
-      #ffcc00 30px,
-      #000 30px,
-      #000 60px
-    );
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+.project-container:hover {
+    transform: scale(1.1);
 }
 
-.warning-tape span,
-.warning-tape2 span {
-    color: #000;
-    font-size: xx-large;
+.project-preview {
+    width: 95%;
+    background: linear-gradient(120deg, var(--orange), var(--yellow));
+    padding: 3px;
+}
+
+.project-title {
     font-weight: bold;
-    background-color: #ffcc00;
-    white-space: nowrap;
 }
 
+.project-desc {
+    color: gainsboro;
+}
