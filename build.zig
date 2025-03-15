@@ -1,5 +1,6 @@
 const std = @import("std");
 const zine = @import("zine");
+const deploy = @import("deploy.zig");
 
 pub fn build(b: *std.Build) !void {
     zine.website(b, .{
@@ -24,5 +25,5 @@ pub fn build(b: *std.Build) !void {
         .debug = true,
     });
 
-    
+    deploy.deploy(b);
 }
