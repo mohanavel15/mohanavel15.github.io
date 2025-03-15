@@ -8,8 +8,7 @@
 :root {
     --light-gray: #252525;
     --dark-gray: #1E1E1E;
-    --yellow: #FFBE00;
-    --orange: #FF6400;
+    --orange: #f7a41d;
 }
 
 body {
@@ -36,7 +35,7 @@ body {
     width: 90%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: linear-gradient(90deg, var(--orange) 0%, var(--yellow) 50%, var(--orange) 100%); 
+    background: var(--orange); 
 }
 
 .title-greet {
@@ -45,7 +44,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, var(--yellow) 0%, var(--orange) 50%, var(--yellow) 100%);
+    background: var(--orange);
     background-clip: text;
     color: transparent; 
 }
@@ -65,11 +64,10 @@ body {
     font-weight: bold;
 }
 
-body p {
+.text-padding {
     font-size: larger;
     width: 85%;
 }
-
 
 @media (max-width: 620px) {
     .main-container {
@@ -110,7 +108,7 @@ body p {
 
 .project-preview {
     width: 95%;
-    background: linear-gradient(120deg, var(--orange), var(--yellow));
+    background: var(--orange);
     padding: 3px;
 }
 

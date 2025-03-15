@@ -1,0 +1,10 @@
+---
+.title = "Mohan's Portfolio",
+.date = @date("2025-01-30T00:00:00"),
+.author = "Mohanavel",
+.layout = "index.shtml",
+.draft = false,
+.tags = [],
+---
+
+I'm software developer who tinkers with Linux and Raspberry Pi, tinkering and implementing network protocols, making random full stack projects, neural networks and occasionally contributing to open source projects.

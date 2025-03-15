@@ -1,0 +1,33 @@
+<extend template="base.shtml">
+<title id="title" :text="$page.title"></title>
+<head id="head"></head>
+<div id="content">
+
+  <div class="text-padding" :html="$page.content()"></div>
+
+  <div class="gradient-bar"></div>
+  <span id="projects" class="title-greet">Projects</span>
+  <div class="projects-grid">
+	<div class="project-container" onclick="linkto('https://github.com/mohanavel15/Chatapp');">
+	  <img class="project-preview" src="$site.asset('images/chatapp.png').link()">
+	  <span class="project-title">Chatapp</span>
+	  <span class="project-desc">Chat applications with private chat and group chat with moderation features</span>
+	</div>
+	<div class="project-container" onclick="linkto('https://github.com/mohanavel15/Meet');">
+	  <img class="project-preview" src="$site.asset('images/meet.png').link()">
+	  <span class="project-title">Meet</span>
+	  <span class="project-desc">Google Meet alike application for 2 people call</span>
+	</div>
+	<div class="project-container" onclick="linkto('https://github.com/mohanavel15/discord-ui-clone');">
+	  <img class="project-preview" src="$site.asset('images/discord_ui_clone.png').link()">
+	  <span class="project-title">Discord UI Clone</span>
+	</div>
+	<div class="project-container" onclick="linkto('https://github.com/mohanavel15/SocialMedia');">
+	  <img class="project-preview" src="$site.asset('images/socialmedia.png').link()">
+	  <span class="project-title">Social Media</span>
+	  <span class="project-desc">Simple Twitter alike social media</span>
+	</div>
+  </div>
+  <div class="gradient-bar"></div>
+  <span>Copyright &copy; 2024 - Mohanvel SK</span>
+</div>
