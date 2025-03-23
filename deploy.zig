@@ -10,12 +10,11 @@ fn gh_pages(step: *std.Build.Step, _: std.Build.Step.MakeOptions) anyerror!void 
     const allocator = step.owner.allocator;
 
     try execute_cmd(step, "git checkout --orphan gh-pages", allocator);
-    try execute_cmd(step, "git rm -rf .", allocator);
-
-    // try execute_cmd(step, "cp -r zig-out/* .", allocator);
-
-    try execute_cmd(step, "git add .", allocator);
-    try execute_cmd(step, "git commit -m \"Deploy to gh-pages\"", allocator);
+    try execute_cmd(step, "mv zig-out public", allocator);
+    try execute_cmd(step, "git add public", allocator);
+    try execute_cmd(step, "git commit -m \"Deploy_to_gh-pages\"", allocator);
+    try execute_cmd(step, "git checkout main", allocator);
+    try execute_cmd(step, "mv public zig-out", allocator);
 }
 
 fn execute_cmd(step: *std.Build.Step, cmd: []const u8, allocator: std.mem.Allocator) !void {
@@ -29,7 +28,6 @@ fn execute_cmd(step: *std.Build.Step, cmd: []const u8, allocator: std.mem.Alloca
     }
 
     const argv = try argv_list.toOwnedSlice();
-
     const result = try evalChildProcess(step, argv);
-    std.debug.print("{s}", .{result});
+    std.debug.print("{s}\n", .{result});
 }
