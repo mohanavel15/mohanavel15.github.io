@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf zig-out
+zig build
 git checkout --orphan gh-pages
 git rm -rf .
 mv zig-out/* .
