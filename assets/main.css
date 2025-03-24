@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    color: aliceblue;
+    color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,6 +20,12 @@ body {
     overflow-y: scroll;
 }
 
+.horizontalcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-container {
     position: relative;
     min-height: 100%;
@@ -32,7 +38,7 @@ body {
 }
 
 .gradient-bar {
-    height: 5px;
+    height: 3px;
     width: 90%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -129,8 +135,4 @@ body {
 
 .project-desc {
     color: gainsboro;
-}
-
-h1, h2, h3, h4 {
-    margin-top: 12px;
 }

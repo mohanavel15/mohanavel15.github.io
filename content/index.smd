@@ -1,13 +1,13 @@
 ---
 .title = "Mohan's Portfolio",
-.date = @date("2025-01-30T00:00:00"),
-.author = "Mohanavel",
+.date = @date("2025-03-24T00:00:00"),
+.author = "Mohanavel SK",
 .layout = "index.shtml",
 .draft = false,
 .tags = [],
 ---
 
-I'm software developer and I have been coding as hobby for around 6 years. I usually tinker with Linux and Raspberry Pi, tinkering 
+I'm software developer who have been coding as hobby for around 6 years. I usually tinker with Linux and Raspberry Pi, tinkering 
 and implementing network protocols, making random full stack projects, neural 
 networks and occasionally contributing to open source projects.
 
