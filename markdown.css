@@ -1,5 +1,5 @@
 hr {
-    height: 5px;
+    height: 3px;
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -24,4 +24,8 @@ figure figcaption {
 
 li {
     margin-left: 8%;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 12px;
 }
