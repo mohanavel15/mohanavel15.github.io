@@ -2,7 +2,8 @@
 
 rm -rf zig-out
 zig build
-git checkout --orphan gh-pages
+#git checkout --orphan gh-pages (only for first time!)
+git checkout gh-pages
 git rm -rf .
 mv zig-out/* .
 echo .zig-cache > .gitignore
