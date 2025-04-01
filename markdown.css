@@ -29,3 +29,7 @@ li {
 h1, h2, h3, h4 {
     margin-top: 12px;
 }
+
+h2 {
+    margin-bottom: 12px;
+}
