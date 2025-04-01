@@ -38,3 +38,9 @@ August 2024 - October 2024
 - Developed a Payload CMS-based content management system and deployed it to a dynamically scaling AWS ECS cluster and S3 Bucket as CDN.
 - Built and optimized the backend for an Enterprise Resource Management System using AWS Lambda and DynamoDB with AWS Cognito based authentication system.
 - Designed and implemented a PDF annotation module using React.js (frontend) and FastAPI (backend) to automate and accelerate the certification process. Deployed it to EC2 instances and AWS Amplify.
+
+---
+
+## OSS Contributions
+- **Solid JS Primitives**: _[click here](https://github.com/solidjs-community/solid-primitives/pulls?q=author%3Amohanavel15)_ to view PRs
+- **Zig's Std**: _[click here](https://github.com/ziglang/zig/pulls?q=author%3Amohanavel15)_ to view PRs
