@@ -7,7 +7,7 @@
   <title id="title">
     <super>
   </title>
-  <meta name="google-site-verification" content="LvkTZP-jgid9UqEaaR1Y6joRPF7uDxVrgKvSNPBLaK8" />
+  <meta name="google-site-verification" content="LvkTZP-jgid9UqEaaR1Y6joRPF7uDxVrgKvSNPBLaK8">
   <link rel="stylesheet" href="$site.asset('main.css').link()">
   <link rel="stylesheet" href="$site.asset('markdown.css').link()">
   <script src="$site.asset('script.js').link()" type="text/javascript"></script>
