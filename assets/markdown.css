@@ -7,6 +7,10 @@ hr {
     background: var(--orange); 
 }
 
+br {
+    margin-bottom: 0.5rem;
+}
+
 img,
 video {
   margin: 0;

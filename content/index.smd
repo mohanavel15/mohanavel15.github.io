@@ -1,15 +1,19 @@
 ---
 .title = "Mohan's Portfolio",
-.date = @date("2025-03-24T00:00:00"),
+.date = @date("2025-09-12T00:00:00"),
 .author = "Mohanavel SK",
-.layout = "index.shtml",
+.layout = "blank.shtml",
 .draft = false,
-.tags = [],
+.tags = ["personal", "portfolio", "Mohanavel SK", "mohanavel15"],
 ---
 
-I'm software developer who have been coding as hobby for around 6 years. I usually tinker with Linux and Raspberry Pi, tinkering 
-and implementing network protocols, making random full stack projects, neural 
-networks and occasionally contributing to open source projects.
+I've been a passionate software developer for about six years, treating it as a dedicated hobby. 
+My experience is broad, ranging from deep dives into Linux and Raspberry Pi to implementing network protocols. 
+I also enjoy creating various full-stack projects, experimenting with neural networks, 
+and occasionally contributing to open-source projects.I've been a passionate software developer for about six years, 
+treating it as a dedicated hobby. My experience is broad, ranging from deep dives into Linux 
+and Raspberry Pi to implementing network protocols. I also enjoy creating various full-stack projects, 
+experimenting with neural networks, and occasionally contributing to open-source projects.
 
 ---
 
@@ -28,10 +32,10 @@ by the state government of Tamil Nadu.
 
 ## Experience
 #### Bay of Bengal Programme Inter Governmental Organisation - Part Time Internship
-February 2025 - Present
-- Fine tuned Yolo 11n to recognize ship using Synthetic-aperture Radar (SAR) images.
-- Integrated the Yolo model with ESA’s snap python plugin and tested with Sentinel 1 satellite images.
-- Working on the overall architecture of the project.
+February 2025 - April 2025
+- Fine-tuned YOLOv11 to recognize ships using Synthetic Aperture Radar (SAR) images.
+- Integrated the Yolo model with ESA’s snap python plugin and tested with Sentinel 1 satellite images and extracted gps locations of ships in images.
+- Built a web interface with OpenStreetMap and displayed the locations of ships.
 
 #### Heptre Techworks PVT LTD - Internship
 August 2024 - October 2024

@@ -1,39 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head id="head">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="title">
+  <head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">
+      <super>
+    </title>
+    <meta name="google-site-verification" content="LvkTZP-jgid9UqEaaR1Y6joRPF7uDxVrgKvSNPBLaK8">
+    <link rel="stylesheet" href="$site.asset('main.css').link()">
+    <link rel="stylesheet" href="$site.asset('markdown.css').link()">
+    <script src="$site.asset('script.js').link()" type="text/javascript"></script>
     <super>
-  </title>
-  <meta name="google-site-verification" content="LvkTZP-jgid9UqEaaR1Y6joRPF7uDxVrgKvSNPBLaK8">
-  <link rel="stylesheet" href="$site.asset('main.css').link()">
-  <link rel="stylesheet" href="$site.asset('markdown.css').link()">
-  <script src="$site.asset('script.js').link()" type="text/javascript"></script>
-  <super>
-</head>
-
-<body>
-  <div id="content" title="main" class="main-container">
-    <div class="gradient-bar"></div>
-    <span class="title-greet">Hi, 👋 I'm <span class="gradient-text">Mohan</span></span>
-    <div class="gradient-bar"></div>
-    <!-- <div class="nav">
-      <div>
-        <button onclick="scrollto('main');">[HOME]</button>
-        <button onclick="scrollto('projects');">[ACHIEVEMENTS]</button>
-        <button onclick="scrollto('projects');">[EXPERIENCE]</button>
+  </head>
+  <body>
+    <div id="content" title="main" class="main-container">
+      <div class="gradient-bar"></div>
+      <span class="title-greet">Hi, 👋 I'm
+        <span class="gradient-text">Mohan</span></span>
+      <br>
+      <br>
+      <div class="nav">
+        <div>
+          <a href="/">[HOME]</a>
+          <a href="/links">[LINKS]</a>
+        </div>
       </div>
-      <div>
-        <button onclick="scrollto('projects');">[PROJECTS]</button>
-        <button onclick="scrollto('projects');">[PUBLICATIONS]</button>
-        <button onclick="linkto('https://github.com/mohanavel15');">[GITHUB]</button>
-      </div>
+      <div class="gradient-bar"></div>
+      <super>
     </div>
-    <div class="gradient-bar"></div> -->
-    <super>
-  </div>
-</body>
-
+  </body>
 </html>
