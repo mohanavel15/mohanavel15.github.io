@@ -68,17 +68,14 @@ body {
     gap: 2rem;
 }
 
-.nav button {
+.nav a {
     cursor: pointer;
-}
-
-
-.nav button {
     background: none;
     border: none;
     outline: none;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .text-padding {
