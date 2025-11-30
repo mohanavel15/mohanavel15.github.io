@@ -1,10 +1,10 @@
 hr {
-    height: 3px;
+    height: 1px;
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;;
     border: none;
-    background: var(--primary); 
+    background: #928374; 
 }
 
 br {
@@ -23,7 +23,7 @@ figure {
 
 figure figcaption {
     font-size: smaller;
-    color: bisque;
+    color: #928374;
 }
 
 li {

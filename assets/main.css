@@ -1,15 +1,14 @@
 * {
     padding: 0;
     margin: 0;
-    color: antiquewhite;
+    color: #fbf1c7;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
     --light-gray: #32302f;
     --dark-gray: #282828;
-    --primary: #98971a;
-    --primary-2: #b8bb26;
+    --primary: #cc241d;
 }
 
 body {
@@ -38,12 +37,32 @@ body {
     padding-bottom: 2rem;
 }
 
-.gradient-bar {
+.post-list-item {
+    display: flex;
+    gap: 0.5rem;
+    color: #bdae93;
+}
+
+.post-list-item p {
+    color: #bdae93;
+}
+
+.post-list-item a {
+    color: #458588;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.spacer {
     height: 3px;
     width: 90%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: var(--primary); 
 }
 
 .title-greet {

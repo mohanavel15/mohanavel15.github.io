@@ -2,7 +2,7 @@
 <title id="title" :text="$page.title"></title>
 <head id="head"></head>
 <div id="content">
-  <div class="text-padding" :html="$page.content()"></div>
+  <div class="text-padding page-content" :html="$page.content()"></div>
   <div class="text-padding horizontalcenter">
     <hr>
     <span>Copyright &copy; 2024 - Mohanavel SK</span>
