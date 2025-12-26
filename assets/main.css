@@ -1,14 +1,35 @@
+:root {
+    --bg-primary: #1d2021;
+    --bg-secondary: #1d2021;
+    --primary: #cc241d;
+    --text-primary: #d5c4a1;
+    --text-secondary: #d5c4a1;
+
+    /* --bg-primary: #d5c4a1;
+    --bg-secondary: #d5c4a1;
+    --primary: #cc241d;
+    --text-primary: #1d2021;
+    --text-secondary: #1d2021; */
+
+    /* --bg-primary: #1d2021;
+    --bg-secondary: #282828;
+    --primary: #cc241d;
+    --text-primary: #fbf1c7;
+    --text-secondary: #bdae93; */
+
+    /* --bg-primary: #fbf1c7;
+    --bg-secondary: #f2e5bc;
+    --primary: #cc241d;
+    --text-primary: #1d2021;
+    --text-secondary: #3c3836; */
+}
+
+
 * {
     padding: 0;
     margin: 0;
-    color: #fbf1c7;
+    color: var(--text-primary);
     font-family: Arial, Helvetica, sans-serif;
-}
-
-:root {
-    --light-gray: #32302f;
-    --dark-gray: #282828;
-    --primary: #cc241d;
 }
 
 body {
@@ -16,7 +37,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--light-gray);
+    background-color: var(--bg-secondary);
     overflow-y: scroll;
 }
 
@@ -30,7 +51,7 @@ body {
     position: relative;
     min-height: 100%;
     width: 620px;
-    background-color: var(--dark-gray);
+    background-color: var(--bg-primary);
     display: flex;
     flex-direction: column;
     align-items: center;

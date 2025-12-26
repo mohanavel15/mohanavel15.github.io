@@ -2,9 +2,9 @@ hr {
     height: 1px;
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
     border: none;
-    background: #928374; 
+    background: var(--text-secondary); 
 }
 
 br {
@@ -23,7 +23,7 @@ figure {
 
 figure figcaption {
     font-size: smaller;
-    color: #928374;
+    color: var(--text-secondary);
 }
 
 li {
@@ -32,8 +32,13 @@ li {
 
 h1, h2, h3, h4 {
     margin-top: 12px;
+    margin-bottom: 12px;
 }
 
-h2 {
-    margin-bottom: 12px;
+p {
+    text-align: justify;
+}
+
+p + P {
+    margin-top: 12px;
 }
